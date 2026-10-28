@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nalbka-kgbuild_jd224"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出知识图谱构建工程师·流水线并行气泡比例上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "nalbka" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://nalbka.github.io"
+Repository = "https://github.com/nalbka/kgbuild_jd224"
+Issues = "https://github.com/nalbka/kgbuild_jd224/issues"
+
+[project.scripts]
+kgbuild_jd224 = "kgbuild_jd224:main"
+
+[tool.setuptools]
+py-modules = ["kgbuild_jd224"]
